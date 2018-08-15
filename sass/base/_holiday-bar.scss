@@ -1,0 +1,58 @@
+
+.holiday-bar {
+	@include flex-align-items(center);
+	position: absolute;
+	top: u(1/2);
+	left: 0;
+	width: 100%;
+	z-index: 1;
+
+	&.light {
+		.bar-start,
+		.bar-middle,
+		.bar-end {
+			background: $color-active;
+		}
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+@for $i from 1 through $cal-columns {
+
+    .bar-span-#{$i} {
+        width: calc(100% * #{$i});
+    }
+}
+
+.bar-start {
+	position: relative;
+	left: $cell-padding;
+	padding: 1px u(1/4);
+	border-radius: 7px;
+	color: $color-white;
+	background: $color-link;
+}
+
+.bar-middle {
+	background: blue;
+	width: 100%;
+	height: u(1/2);
+	background: $color-link;
+}
+
+.bar-end {
+	height: u(1 + 1/3);
+	width: u(1/2);
+	margin-right: $cell-padding;
+    background: $color-link;
+    border-radius: u(1/4);
+}
+
+
+.holiday-bar + .holiday-bar {
+	top: u(2.5);
+}
+

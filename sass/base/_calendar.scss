@@ -1,0 +1,193 @@
+
+.calendar {
+	max-width: 90%;
+	margin: u(1) auto;
+	background: $color-white;
+}
+
+.cal-row {
+	@include display-flex;
+	@include flex-direction(column);
+}
+
+.cal-cell {
+	@include display-flex;
+	@include flex-direction(column);
+	@include flex(1, 1, 0%);
+	position: relative;
+    box-shadow: inset 0 0 0 1px $border-color;
+	height: u(11);
+	margin-bottom: u(1.5);
+}
+
+.cal-header {
+	display: none;
+}
+
+.table-top,
+.table-end {
+	@include display-flex;
+	@include flex-justify-content(space-between);
+	@include flex-align-items(center);
+	@include flex(1, 0, 0%);
+	position: relative;
+	min-height: 34px;
+	padding: 0 $cell-padding;
+}
+
+.table-top {
+	text-transform: uppercase;
+}
+
+.table-body {
+	@include flex(3, 0, 0%);
+	position: relative;
+	padding: $cell-padding;
+
+	.holiday-bar {
+		display: none;
+	}
+}
+
+.today {
+	box-shadow: inset 0 0 0 2px $color-active;
+	color: $color-active-lo-1;
+	background: $color-active-hi-2;
+}
+
+.prev-month {
+	&:before {
+		@include background-stripes(-45deg, $stripe-color, transparent, 1px);
+		opacity: 0.1;
+	}
+}
+
+.prev-day {
+	&:before {
+		@include background-stripes(45deg, $stripe-color, transparent, 1px);
+		opacity: 0.05;
+	}
+}
+
+.next-month {
+	&:before {
+		@include background-stripes(45deg, $stripe-color, transparent, 1px);
+		opacity: 0.15;
+	}
+}
+
+.new-month {
+	padding: u(1);
+	border: 1px solid $border-color;
+	text-align: center;
+	text-transform: uppercase;
+	margin: u(2) 0 u(1.5);
+}
+
+.prev-month,
+.prev-day {
+	.holiday-bar {
+		opacity: 0.5;
+	}
+}
+
+.hol,
+.public {
+	box-shadow: inset 0 0 0 1px $color-active;
+	color: $color-active;
+
+	&:before {
+		@include background-stripes(45deg, $stripe-color, transparent, 1px);
+		opacity: 0.05;
+	}
+}
+
+.hol {
+	background: $color-active-hi-2;
+}
+
+.public {
+	background: $color-white;
+}
+
+.day {
+	font-size: $type-size-base;
+}
+
+.end-item {
+	position: absolute;
+	top: 0;
+	padding: u(1/4) u(1/2);
+	border-radius: u(1/4);
+	background: $color-white;
+	box-shadow: 0 0 1px 1px $border-color-lo-1;
+
+	.icon {
+		width: u(1) - 1;
+	}
+}
+
+
+.dot {
+	@include dot(u(3/4), $color-black);
+	opacity: 0.5;
+
+	&.active {
+		background: $color-active;
+	}
+
+	&.inactive {
+		background: $color-inactive;
+	}
+}
+
+
+@media(min-width: $screen-medium) {
+	.calendar {
+		box-shadow: inset 0 0 0 1px $border-color;
+	}
+
+	.cal-header {
+		@include display-flex;
+		@include flex-justify-content(space-between);
+		@include flex-align-items(center);
+		@include flex(1, 1, 0%);
+		padding: u(1) u(1/2);
+		text-transform: uppercase;
+		color: $color-heading;
+		font-size: $type-size-medium;
+	}
+
+	.table-body {
+		.holiday-bar {
+			@include display-flex;
+		}
+	}
+
+	.cal-row {
+		@include flex-direction(row);
+	}
+
+	.cal-cell {
+		width: calc(100% / #{$cal-columns});
+		margin-bottom: 0;
+
+	}
+
+	.day {
+		display: none;
+	}
+
+	.end-item {
+		&.holiday {
+			display: none;
+		}
+	}
+
+	.new-month {
+		display: none;
+	}
+}
+
+
+

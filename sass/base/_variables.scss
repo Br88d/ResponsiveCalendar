@@ -1,0 +1,69 @@
+
+
+$base-unit: 12px;
+
+@function u($n) {
+    @return $n * $base-unit;
+}
+
+
+// -- colours
+
+$color-heading: #567082;
+$color-body: #9CA4AA;
+$color-white: #FFFFFF;
+$color-black: #000000;
+$color-light-bg: #F9F9F9;
+
+$border-color: #e8ebec;
+$border-color-lo-1: #d4d4d4;
+
+$color-active-hi-1: #A9F0E1;
+$color-active-hi-2: #f8fffe;
+$color-active: #50e2c3;
+$color-active-lo-1: #20c597;
+
+$color-inactive: #e1542d;
+$color-inactive-hi-1: #F0AA99;
+
+$stripe-color: #354A5A;
+
+$color-link: #00a3f5;
+
+
+
+// -- screen sizes
+
+$screen-small: 480px;
+$screen-medium: 769px;
+$screen-large: 1024px;
+
+
+
+// -- table
+
+$cell-padding: u(3/4);
+$cal-columns: 7;
+
+
+// -- typography
+
+$body-font: 'Futura', 'Helvetica Neue', Arial, sans-serif;
+
+$type-size-base: 13px;
+$type-size-medium: 16px;
+
+$type-weight-bold: 900;
+
+// -- line height
+
+$type-height-base: 1.4;
+
+
+
+
+
+
+
+
+

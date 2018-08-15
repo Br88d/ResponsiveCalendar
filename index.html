@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Charlie HR Calendar</title>
+        <link rel="stylesheet" href="main.css"/>
+    </head>
+    <body>
+        <div class="calendar">
+            <div class="cal-row">
+                <div class="cal-header">
+                    <div class="item">MON</div>
+                    <div class="item">
+                        <div class="dot active"></div>
+                    </div>
+                </div>
+                <div class="cal-header">
+                    <div class="item">TUE</div>
+                    <div class="item">
+                        <div class="dot active"></div>
+                    </div>
+                </div>
+                <div class="cal-header">
+                    <div class="item">WED</div>
+                    <div class="item">
+                        <div class="dot active"></div>
+                    </div>
+                </div>
+                <div class="cal-header">
+                    <div class="item">THU</div>
+                    <div class="item">
+                        <div class="dot active"></div>
+                    </div>
+                </div>
+                <div class="cal-header">
+                    <div class="item">FRI</div>
+                    <div class="item">
+                        <div class="dot active"></div>
+                    </div>
+                </div>
+                <div class="cal-header">
+                    <div class="item">SAT</div>
+                    <div class="item">
+                        <div class="dot inactive"></div>
+                    </div>
+                </div>
+                <div class="cal-header">
+                    <div class="item">SUN</div>
+                    <div class="item">
+                        <div class="dot inactive"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="cal-row">
+                <div class="cal-cell prev-month">
+                    <div class="table-top public">
+                        <div class="item">
+                            <span class="digit">28</span>
+                            <span class="day">Mon</span>
+                        </div>
+                        <div class="item">Public</div>
+                    </div>
+                    <div class="table-body">
+                        <div class="holiday-bar light">
+                            <span class="bar-middle"></span>
+                            <span class="bar-end"></span>
+                        </div>
+                        <div class="holiday-bar bar-span-2">
+                            <span class="bar-middle"></span>
+                            <span class="bar-end"></span>
+                        </div>
+                    </div>
+                    <div class="table-end">
+                        <div class="end-item holiday">Hol x 2</div>
+                    </div>
+                </div>
+                <div class="cal-cell prev-month">
+                    <div class="table-top">
+                        <div class="item">
+                            <span class="digit">29</span>
+                            <span class="day">Tue</span>
+                        </div>
+                    </div>
+                    <div class="table-body"></div>
+                    <div class="table-end">
+                        <div class="end-item holiday">DW Hol</div>
+                    </div>
+                </div>
+                <div class="cal-cell prev-month">
+                    <div class="table-top">
+                        <div class="item">
+                            <span class="digit">30</span>
+                            <span class="day">Wed</span>
+                        </div>
+                    </div>
+                    <div class="table-body"></div>
+                    <div class="table-end"></div>
+                </div>
+                <div class="cal-cell prev-month">
+                    <div class="table-top">
+                        <div class="item">
+                            <span class="digit">31</span>
+                            <span class="day">Thu</span>
+                        </div>
+                    </div>
+                    <div class="table-body"></div>
+                    <div class="table-end"></div>
+                </div>
+                <div class="cal-cell prev-day">
+                    <div class="table-top">
+                        <div class="item">
+                            <span class="digit">1</span>
+                            <span class="day">Fri</span>
+                        </div>
+                    </div>
+                    <div class="table-body">
+                        <div class="holiday-bar">
+                            <span class="bar-start">SK</span>
+                            <span class="bar-middle"></span>
+                            <span class="bar-end"></span>
+                        </div>
+                        <div class="holiday-bar">
+                            <span class="bar-start">MW</span>
+                            <span class="bar-middle"></span>
+                            <span class="bar-end"></span>
+                        </div>
+                    </div>
+                    <div class="table-end">
+                        <div class="end-item holiday">Hol x 2</div>
+                    </div>
+                </div>
+                <div class="cal-cell prev-day">
+                    <div class="table-top">
+                        <div class="item">
+                            <span class="digit">2</span>
+                            <span class="day">Sat</span>
+                        </div>
+                    </div>
+                    <div class="table-body"></div>
+                    <div class="table-end"></div>
+                </div>
+                <div class="cal-cell prev-day">
+                    <div class="table-top">
+                        <div class="item">
+                            <span class="digit">3</span>
+                            <span class="day">Sun</span>
+                        </div>
+                    </div>
+                    <div class="table-body"></div>
+                    <div class="table-end"></div>
+                </div>
+            </div>
+            <div class="cal-row">
+                <div class="cal-cell today">
+                    <div class="table-top">
+                        <div class="item">
+                            <span class="digit">4</span>
+                            <span class="day">Tue</span>
+                        </div>
+                        <div class="item">Today</div>
+                    </div>
+                    <div class="table-body"></div>
+                    <div class="table-end"></div>
+                </div>
+                <div class="cal-cell">
+                    <div class="table-top">
+                        <div class="item">
+                            <span class="digit">5</span>
+                            <span class="day">Wed</span>
+                        </div>
+                    </div>
+                    <div class="table-body"></div>
+                    <div class="table-end"></div>
+                </div>
+                <div class="cal-cell">
+                    <div class="table-top">
+                        <div class="item">
+                            <span class="digit">6</span>
+                            <span class="day">Thu</span>
+                        </div>
+                    </div>
+                    <div class="table-body"></div>
+                    <div class="table-end"></div>
+                </div>
+                <div class="cal-cell">
+                    <div class="table-top hol">
+                        <div class="item">
+                            <span class="digit">7</span>
+                            <span class="day">Fri</span>
+                        </div>
+                        <div class="item">c.holiday</div>
+                    </div>
+                    <div class="table-body"></div>
+                    <div class="table-end"></div>
+                </div>
+                <div class="cal-cell">
+                    <div class="table-top hol">
+                        <div class="item">
+                            <span class="digit">8</span>
+                            <span class="day">Sat</span>
+                        </div>
+                        <div class="item">c.holiday</div>
+                    </div>
+                    <div class="table-body"></div>
+                    <div class="table-end"></div>
+                </div>
+                <div class="cal-cell">
+                    <div class="table-top hol">
+                        <div class="item">
+                            <span class="digit">9</span>
+                            <span class="day">Sun</span>
+                        </div>
+                        <div class="item">c.holiday</div>
+                    </div>
+                    <div class="table-body"></div>
+                    <div class="table-end"></div>
+                </div>
+                <div class="cal-cell">
+                    <div class="table-top">
+                        <div class="item">
+                            <span class="digit">10</span>
+                            <span class="day">Mon</span>
+                        </div>
+                    </div>
+                    <div class="table-body"></div>
+                    <div class="table-end"></div>
+                </div>
+            </div>
+            <div class="cal-row">
+                <div class="cal-cell">
+                    <div class="table-top">
+                        <div class="item">
+                            <span class="digit">11</span>
+                            <span class="day">Mon</span>
+                        </div>
+                    </div>
+                    <div class="table-body"></div>
+                    <div class="table-end"></div>
+                </div>
+                <div class="cal-cell">
+                    <div class="table-top">
+                        <div class="item">
+                            <span class="digit">12</span>
+                            <span class="day">Tue</span>
+                        </div>
+                    </div>
+                    <div class="table-body"></div>
+                    <div class="table-end"></div>
+                </div>
+                <div class="cal-cell">
+                    <div class="table-top">
+                        <div class="item">
+                            <span class="digit">13</span>
+                            <span class="day">Wed</span>
+                        </div>
+                    </div>
+                    <div class="table-body"></div>
+                    <div class="table-end"></div>
+                </div>
+                <div class="cal-cell">
+                    <div class="table-top">
+                        <div class="item">
+                            <span class="digit">14</span>
+                            <span class="day">Thu</span>
+                        </div>
+                    </div>
+                    <div class="table-body"></div>
+                    <div class="table-end"></div>
+                </div>
+                <div class="cal-cell">
+                    <div class="table-top">
+                        <div class="item">
+                            <span class="digit">15</span>
+                            <span class="day">Fri</span>
+                        </div>
+                    </div>
+                    <div class="table-body"></div>
+                    <div class="table-end">
+                        <div class="end-item button"><img src="images/lamp.svg" class="icon"/> 1</div>
+                    </div>
+                </div>
+                <div class="cal-cell">
+                    <div class="table-top">
+                        <div class="item">
+                            <span class="digit">16</span>
+                            <span class="day">Sat</span>
+                        </div>
+                    </div>
+                    <div class="table-body"></div>
+                    <div class="table-end"></div>
+                </div>
+                <div class="cal-cell">
+                    <div class="table-top">
+                        <div class="item">
+                            <span class="digit">17</span>
+                            <span class="day">Sun</span>
+                        </div>
+                    </div>
+                    <div class="table-body"></div>
+                    <div class="table-end"></div>
+                </div>
+            </div>
+            <div class="cal-row">
+                <div class="cal-cell">
+                    <div class="table-top">
+                        <div class="item">
+                            <span class="digit">18</span>
+                            <span class="day">Mon</span>
+                        </div>
+                    </div>
+                    <div class="table-body">
+                        <div class="holiday-bar bar-span-7">
+                            <span class="bar-start">DB</span>
+                            <span class="bar-middle"></span>
+                        </div>
+                    </div>
+                    <div class="table-end">
+                        <div class="end-item holiday">DB Hol</div>
+                    </div>
+                </div>
+                <div class="cal-cell">
+                    <div class="table-top">
+                        <div class="item">
+                            <span class="digit">19</span>
+                            <span class="day">Tue</span>
+                        </div>
+                    </div>
+                    <div class="table-body"></div>
+                    <div class="table-end">
+                        <div class="end-item holiday">DB Hol</div>
+                    </div>
+                </div>
+                <div class="cal-cell">
+                    <div class="table-top">
+                        <div class="item">
+                            <span class="digit">20</span>
+                            <span class="day">Wed</span>
+                        </div>
+                    </div>
+                    <div class="table-body"></div>
+                    <div class="table-end">
+                        <div class="end-item holiday">DB Hol</div>
+                    </div>
+                </div>
+                <div class="cal-cell">
+                    <div class="table-top">
+                        <div class="item">
+                            <span class="digit">21</span>
+                            <span class="day">Thu</span>
+                        </div>
+                    </div>
+                    <div class="table-body"></div>
+                    <div class="table-end">
+                        <div class="end-item holiday">DB Hol</div>
+                    </div>
+                </div>
+                <div class="cal-cell">
+                    <div class="table-top">
+                        <div class="item">
+                            <span class="digit">22</span>
+                            <span class="day">Fri</span>
+                        </div>
+                    </div>
+                    <div class="table-body"></div>
+                    <div class="table-end">
+                        <div class="end-item holiday">DB Hol</div>
+                    </div>
+                </div>
+                <div class="cal-cell">
+                    <div class="table-top">
+                        <div class="item">
+                            <span class="digit">23</span>
+                            <span class="day">Sat</span>
+                        </div>
+                    </div>
+                    <div class="table-body">
+                        <div class="holiday-bar"></div>
+                        <div class="holiday-bar light bar-span-2">
+                            <span class="bar-start">BG</span>
+                            <span class="bar-middle"></span>
+                        </div>
+                    </div>
+                    <div class="table-end">
+                        <div class="end-item holiday">Hol x 2</div>
+                    </div>
+                </div>
+                <div class="cal-cell">
+                    <div class="table-top">
+                        <div class="item">
+                            <span class="digit">24</span>
+                            <span class="day">Sun</span>
+                        </div>
+                    </div>
+                    <div class="table-body"></div>
+                    <div class="table-end">
+                        <div class="end-item holiday">Hol x 2</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cal-row">
+                <div class="cal-cell">
+                    <div class="table-top">
+                        <div class="item">
+                            <span class="digit">25</span>
+                            <span class="day">MOn</span>
+                        </div>
+                    </div>
+                    <div class="table-body">
+                        <div class="holiday-bar bar-span-5">
+                            <span class="bar-middle"></span>
+                            <span class="bar-end"></span>
+                        </div>
+                        <div class="holiday-bar light bar-span-7">
+                            <span class="bar-middle"></span>
+                            <span class="bar-end"></span>
+                        </div>
+                    </div>
+                    <div class="table-end">
+                        <div class="end-item holiday">Hol x 2</div>
+                    </div>
+                </div>
+                <div class="cal-cell">
+                    <div class="table-top">
+                        <div class="item">
+                            <span class="digit">26</span>
+                            <span class="day">Tue</span>
+                        </div>
+                    </div>
+                    <div class="table-body"></div>
+                    <div class="table-end">
+                        <div class="end-item holiday">Hol x 2</div>
+                    </div>
+                </div>
+                <div class="cal-cell">
+                    <div class="table-top">
+                        <div class="item">
+                            <span class="digit">27</span>
+                            <span class="day">Wed</span>
+                        </div>
+                    </div>
+                    <div class="table-body"></div>
+                    <div class="table-end">
+                        <div class="end-item holiday">Hol x 2</div>
+                    </div>
+                </div>
+                <div class="cal-cell">
+                    <div class="table-top">
+                        <div class="item">
+                            <span class="digit">28</span>
+                            <span class="day">Thu</span>
+                        </div>
+                    </div>
+                    <div class="table-body"></div>
+                    <div class="table-end">
+                        <div class="end-item holiday">Hol x 2</div>
+                    </div>
+                </div>
+                <div class="cal-cell">
+                    <div class="table-top">
+                        <div class="item">
+                            <span class="digit">29</span>
+                            <span class="day">Fri</span>
+                        </div>
+                    </div>
+                    <div class="table-body"></div>
+                    <div class="table-end">
+                        <div class="end-item holiday">Hol x 2</div>
+                    </div>
+                </div>
+                <div class="cal-cell">
+                    <div class="table-top">
+                        <div class="item">
+                            <span class="digit">30</span>
+                            <span class="day">Sat</span>
+                        </div>
+                    </div>
+                    <div class="table-body"></div>
+                    <div class="table-end">
+                        <div class="end-item holiday">BG Hol</div>
+                    </div>
+                </div>
+
+                <div class="new-month">August</div>
+
+                <div class="cal-cell next-month">
+                    <div class="table-top">
+                        <div class="item">
+                            <span class="digit">1</span>
+                            <span class="day">Sun</span>
+                        </div>
+                    </div>
+                    <div class="table-body"></div>
+                    <div class="table-end">
+                        <div class="end-item holiday">BG Hol</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

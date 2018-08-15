@@ -1,0 +1,28 @@
+@mixin vendor-prefix($name, $value) {
+  @each $vendor in (‘-webkit-‘, ‘-moz-‘, ‘-ms-‘, ‘-o-‘, ‘’) {
+    #{$vendor}#{$name}: #{$value};
+  }
+}
+
+@mixin dot($size, $color) {
+	width: $size;
+	height: $size;
+	border-radius: 50%;
+	background: $color;
+}
+
+@mixin background-stripes($deg, $first-color, $second-color, $size) {
+	background-image: repeating-linear-gradient($deg, $first-color, $first-color $size, $second-color $size, $second-color $size * 4 );
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+
+
+
+

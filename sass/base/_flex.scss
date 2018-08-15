@@ -1,0 +1,111 @@
+
+
+@mixin display-flex {
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: -moz-flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+
+@mixin flex($grow, $shrink, $basis) {
+    -ms-flex: $grow $shrink $basis;
+    -ms-flexbox: $grow $shrink $basis;
+    -moz-box-flex: $grow;
+    -moz-flex: $grow $shrink $basis;
+    -webkit-box-flex: $grow;
+    -webkit-flex: $grow $shrink $basis;
+    flex: $grow $shrink $basis;
+}
+
+@mixin flex-wrap {
+    -ms-flex-wrap: wrap;
+    -moz-box-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+
+@mixin flex-direction($direction) {
+    -ms-flex-direction: $direction;
+    -moz-box-direction: $direction;
+    -webkit-box-direction: $direction;
+    -webkit-flex-direction: $direction;
+    flex-direction: $direction;
+}
+
+@mixin flex-justify-content($align) {
+    @if $align == 'flex-start' {
+        -ms-flex-pack: 'start';
+    } @else if $align == 'flex-end' {
+        -ms-flex-pack: 'end';
+    } @else if $align == 'center' {
+        -ms-flex-pack: $align;
+    } @else if $align == 'space-between' {
+        -ms-flex-pack: 'justify';
+    } @else if $align == 'space-around' {
+        -ms-flex-pack: 'distribute';
+    }
+    -ms-justify-content: $align;
+    -moz-box-pack: $align;
+    -moz-justify-content: $align;
+    -webkit-justify-content: $align;
+    justify-content: $align;
+}
+
+@mixin flex-align-items($align) {
+    @if $align == 'flex-start' {
+        -ms-flex-align: 'start';
+    } @else if $align == 'flex-end' {
+        -ms-flex-align: 'end';
+    } @else if $align == 'center' {
+        -ms-flex-align: 'center';
+    } @else if $align == 'baseline' {
+        -ms-flex-align: 'baseline';
+    } @else if $align == 'stretch' {
+        -ms-flex-align: $align;
+    }
+    -ms-align-items: $align;
+    -moz-box-align: $align;
+    -moz-align-items: $align;
+    -webkit-align-items: $align;
+    align-items: $align;
+}
+
+@mixin flex-align-content($align) {
+    @if $align == 'flex-start' {
+        -ms-flex-line-pack: 'start';
+    } @else if $align == 'flex-end' {
+        -ms-flex-line-pack: 'end';
+    } @else if $align == 'center' {
+        -ms-flex-line-pack: 'center';
+    } @else if $align == 'space-between' {
+        -ms-flex-line-pack: 'justify';
+    } @else if $align == 'space-around' {
+        -ms-flex-line-pack: 'distribute';
+    } @else if $align == 'stretch' {
+        -ms-flex-line-pack: $align;
+    }
+    -ms-align-content: $align;
+    -moz-align-content: $align;
+    -webkit-align-content: $align;
+    align-content: $align;
+}
+
+@mixin flex-align-self ($value) {
+    -ms-flex-item-align: $value;
+    -ms-align-self: $value;
+    -moz-align-self: $value;
+    -webkit-align-self: $value;
+    align-self: $value;
+}
+
+@mixin flex-order($int: 0) {
+    order: $int;
+    -webkit-box-ordinal-group: $int + 1;
+    -webkit-order: $int;
+    -moz-order: $int;
+    -ms-flex-order: $int;
+}
